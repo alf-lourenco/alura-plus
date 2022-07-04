@@ -1,12 +1,14 @@
-usado para criar variaveis no CSS, posteriormente as cores serao acionadas pelo nome da variavel
-:root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo:#00030C;
-    --font-principal: 'Inter';
+:root{
+
+  --branco-principal:#FFFFFF;
+  --cinza-secundario:#c0c0c0c0;
+  --botao-azul:#167bf7;
+  --cor-de-fundo:#00030c;
+  --font-principal: 'inter';
+  --botao-azul-efeito: #3c92fa;
 
 }
+
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
@@ -14,69 +16,63 @@ body{
     font-size: 16px;
     font-weight: 400;
 }
-*{
-    margin: 0;
+/* *{
+    margin:0;
     padding: 0;
-
-}
+} */
 .principal{
-    background-image: url("../img/Background.png");
+    background-image: url(../img/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    align-items: center;
+    align-items: center; /* alinha verticalmente */
     text-align: center;
 }
 .container{
-    height: 100vh;
-    display:grid;
-    grid-template-columns: 50% 50%;
-
+    height: 100vh;/* vai usar 100% da altura do dispositivo */
+    display: grid; /* grid por padrao 12 grades */
+    grid-template-columns: 43% 57%;
 }
+
 .container__botao{
     background-color: var(--botao-azul);
     border-radius: 5px;
     padding: 1em;
     color: var(--branco-principal);
-    display:block;
+    display: block;
     text-decoration: none;
     margin-bottom: 1em;
 }
 .botao_secundario{
     background-color: transparent;
     border: 2px solid var(--branco-principal);
-
 }
+
 .container__aviso{
     font-size: 12px;
     color: var(--cinza-secundario);
-
-
 }
 .container__titulo{
     font-size: 28px;
     font-weight: 700;
-
 }
-.container__img{
+.Container__img{
     margin: 1em 0 2em 0;
 }
 .container__caixa{
-    margin: 0 6em;
+    margin: 0 3em;
 }
 .secundario__imagem{
     width: 80%;
-    display: inline;
 }
 .secundario{
     align-items: center;
-    margin: 0 10em;
+    margin:  0 6em;
 }
-.descricao__titulo{
+.descricao__titlo{
     font-weight: 700;
     font-size: 48px;
-    color: var(--branco-principal);
     margin-bottom: 0.1em;
-    
+
 }
 .descricao__texto{
     color: var(--cinza-secundario);
@@ -84,7 +80,6 @@ body{
 .secundario__botao{
     display: inline-block;
     margin-top: 1em;
-
 }
 .container__descricao{
     padding: 2em;
@@ -94,60 +89,60 @@ body{
     justify-content: center;
     list-style-type: none;
     margin: 5em 0;
+
 }
 .dispositivos{
     text-align: center;
-
 }
+
 .dispositivos__titulo{
-    font-size:48px;
+    font-size: 48px;
     color: var(--branco-principal);
 }
-
 .lista__item{
     font-size: 32px;
     color: var(--branco-principal);
 }
 
-.rodape{
-    text-align: center;
+.lista_link a:hover{
+    color: var(--botao-azul);
 }
 
-.rodape_lista{
-    color: var(--branco-principal);
+.lista_link a:active{
+    color: purple;
+}
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+/* Footer */
+
+.rodape{ 
+    text-align: center;
+    margin: 10px;
 }
 .rodape__logo{
-    margin-bottom: 50px;
-    
+    margin-bottom: 30px;
 }
-.lista_link{
-    display: inline-block;
-    margin: 0px 15px 20px 15px;
-    font-size: 16px;
+
+ul li{
+    display: inline;
+    padding: 10px;
     line-height: 24px;
 }
-.lista_link a{
-    color: var(--cinza-secundario);
+ul li a{
+    color: var(--branco-principal);
     text-decoration: none;
+    
 }
 .rodape_texto{
-    color: var(--cinza-secundario);
+    margin: 30px auto;
+    line-height: 30px;
     text-align: center;
-    font-size: 14px;
-    padding: 0 0 30 0px;
-    line-height: 21px;
-
+    color: var(--cinza-secundario);
 }
 .marginBottom{
-    padding: 0 0 50px 0px;
-}
-.lista_link a:hover{
-    color: #f7ca04;
-    text-decoration:underline;
-}
-.lista_link:hover{
-    font-size: 20px;
-}
-.container{
-    
+    margin: 30px;
+
 }
