@@ -1,0 +1,11 @@
+Com :root voce criar variaveis para usar no css, assim, fica mais facil de usar as cores. 
+:root{
+    --nome-da-variavel: #FFFFFF
+    }
+*{
+    pega todos os elementos e configura
+    margin: 0;
+    padding: 0;
+    etc
+}
+https://www.youtube.com/watch?v=OMw7xjaBEF8
