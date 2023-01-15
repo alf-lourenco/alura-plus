@@ -160,4 +160,36 @@ ul li a{
 .secundario__botao{
     display: inline-block;
     margin-top: 1em;
+    margin-top: 10rem;
+}
+
+
+@media screen and (max-width: 720px ){
+
+    .container{
+        display: block;
+        background-image: none;
+    }
+    
+    .Container__img{
+        width: 50vw;
+    }
+    .container__caixa{
+        margin: 2em 2em;
+    }
+    .secundario{
+        margin: 0;
+        text-align: center;
+    }
+    .secundario__imagem{
+        width: 50vw;
+    }
+
+    .dispositivos__lista{
+        display: block;
+    }
+
+    .rodape{
+        display: block;
+    }       
 }
